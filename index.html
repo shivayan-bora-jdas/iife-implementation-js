@@ -12,7 +12,10 @@
     <ul id="users"></ul>
     <input type="text" placeholder="New User" id="input">
     <button id="submit">Submit</button>
-    <!--We have done nothing to separate our code into modules, all we have done is separate it by physical location-->
+    <!--Instead of having our entire app live in the global namespace, we have exposed a single object APP-->
+    <!--We then put everything inside APP, which will prevent us from polluting the global namespae-->
+    <!--We wrapped everything else in a function to keep it enclosed from the rest of the app-->
+    <script src="app.js"></script>
     <script src="users.js"></script>
     <script src="dom.js"></script>
 </body>
