@@ -14,7 +14,11 @@
     <button id="submit">Submit</button>
     <!--Instead of having our entire app live in the global namespace, we have exposed a single object APP-->
     <!--We then put everything inside APP, which will prevent us from polluting the global namespae-->
-    <!--We wrapped everything else in a function to keep it enclosed from the rest of the app-->
+    <!--We wrapped everything else in a IIFE to keep it enclosed from the rest of the app-->
+
+    <!--Problems:-->
+    <!--1. APP is still attached to global namespace and if any other library uses it, we're in trouble-->
+    <!--2. The exact order of the script tags matter and if it's not in this exact same order, the app will break-->
     <script src="app.js"></script>
     <script src="users.js"></script>
     <script src="dom.js"></script>
