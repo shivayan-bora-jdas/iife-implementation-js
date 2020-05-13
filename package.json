@@ -1,0 +1,23 @@
+{
+  "name": "iife",
+  "version": "1.0.0",
+  "description": "This is a step by step implementation to see the benifits of the module system in JavaScript.",
+  "main": "app.js",
+  "scripts": {
+    "start": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shivayan-bora-jdas/iife-implementation-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shivayan-bora-jdas/iife-implementation-js/issues"
+  },
+  "homepage": "https://github.com/shivayan-bora-jdas/iife-implementation-js#readme",
+  "dependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
